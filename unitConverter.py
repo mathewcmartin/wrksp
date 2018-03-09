@@ -17,7 +17,9 @@ def print_menu():
     print('7. tbsp to mL')
     print('8. 1 fl oz or 2 tbsp to mL')
     print('9. 1 cup or 8 fl oz to mL')
-    print('10. 1 pint or 2 cups to mL')
+    print('10. 1 pint or 2 cups or 16 fl oz to mL')
+    print('11. 1 quart or 2 pints to mL')
+    print('12. 1 gallon or 4 quarts or 128 fl oz to Liters')
 
 def km_miles():
     km = float(input('Enter distance in kilometers: '))
@@ -79,6 +81,18 @@ def pint_mL():
 
     print('pints in mL: {0}'.format(mL))
 
+def quart_mL():
+    quart = float(input('Enter the number of quarts: '))
+    mL = quart * 946.35296
+
+    print('quarts in mL: {0}'.format(mL))
+
+def gal_Liters():
+    gal = float(input('Enter the number of gallons: '))
+    Liters = gal * 3.7854
+
+    print('gallons in Liters: {0}'.format(Liters))
+
 if __name__ == '__main__':
     print_menu()
     choice = input('Which conversion would you like to do?: ')
@@ -109,5 +123,11 @@ if __name__ == '__main__':
     if choice == '9':
         cup_mL()
 
-    if choice =='10':
+    if choice == '10':
         pint_mL()
+
+    if choice == '11':
+        quart_mL()
+
+    if choice == '12':
+        gal_Liters()
