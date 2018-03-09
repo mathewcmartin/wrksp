@@ -15,8 +15,11 @@ def print_menu():
     print('5. Celsius to Farenheit')
     print('6. Farenheit to Celsius')
     print('7. tbsp to mL')
+    print('7a. mL to tbsp')
     print('8. 1 fl oz or 2 tbsp to mL')
+    print('8a. mL to fl oz')
     print('9. 1 cup or 8 fl oz to mL')
+    print('9a. mL to cups')
     print('10. 1 pint or 2 cups or 16 fl oz to mL')
     print('11. 1 quart or 2 pints to mL')
     print('12. 1 gallon or 4 quarts or 128 fl oz to Liters')
@@ -63,17 +66,35 @@ def tbsp_mL():
 
     print('tbsp in mL: {0}'.format(mL))
 
+def mL_tbsp():
+    mL = float(input('Enter the number of mL: '))
+    tbsp = mL / 14.78677
+
+    print('mL in tbsp: {0}'.format(tbsp))
+
 def floz_mL():
     floz = float(input('Enter the number of fluid ounces: '))
     mL = floz * 29.57353
 
     print('fluid ounces in mL: {0}'.format(mL))
 
+def mL_floz():
+    mL = float(input('Enter the number of mL: '))
+    floz = mL / 29.57353
+
+    print('fluid ounces in mL: {0}'.format(floz))
+
 def cup_mL():
     cup = float(input('Enter the number of cups: '))
     mL = cup * 236.58824
 
     print('cups in mL: {0}'.format(mL))
+
+def mL_cup():
+    mL = float(input('Enter the number of mL: '))
+    cup = mL / 236.58824
+
+    print('mL in cups: {0}'.format(cup))
 
 def pint_mL():
     pint = float(input('Enter the number of pints: '))
@@ -117,11 +138,20 @@ if __name__ == '__main__':
     if choice == '7':
         tbsp_mL()
 
+    if choice == '7a':
+        mL_tbsp()
+
     if choice == '8':
         floz_mL()
 
+    if choice == '8a':
+        mL_floz()
+
     if choice == '9':
         cup_mL()
+
+    if choice == '9a':
+        mL_cup()
 
     if choice == '10':
         pint_mL()
