@@ -16,6 +16,8 @@ def print_menu():
     print('6. Farenheit to Celsius')
     print('7. tbsp to mL')
     print('8. 1 fl oz or 2 tbsp to mL')
+    print('9. 1 cup or 8 fl oz to mL')
+    print('10. 1 pint or 2 cups to mL')
 
 def km_miles():
     km = float(input('Enter distance in kilometers: '))
@@ -65,6 +67,18 @@ def floz_mL():
 
     print('fluid ounces in mL: {0}'.format(mL))
 
+def cup_mL():
+    cup = float(input('Enter the number of cups: '))
+    mL = cup * 236.58824
+
+    print('cups in mL: {0}'.format(mL))
+
+def pint_mL():
+    pint = float(input('Enter the number of pints: '))
+    mL = pint * 473.17648
+
+    print('pints in mL: {0}'.format(mL))
+
 if __name__ == '__main__':
     print_menu()
     choice = input('Which conversion would you like to do?: ')
@@ -91,3 +105,9 @@ if __name__ == '__main__':
 
     if choice == '8':
         floz_mL()
+
+    if choice == '9':
+        cup_mL()
+
+    if choice =='10':
+        pint_mL()
