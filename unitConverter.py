@@ -16,13 +16,16 @@ def print_menu():
     print('6. Farenheit to Celsius')
     print('7. tbsp to mL')
     print('7a. mL to tbsp')
-    print('8. 1 fl oz or 2 tbsp to mL')
+    print('8. 1 fl oz or 2 tbsp per mL')
     print('8a. mL to fl oz')
-    print('9. 1 cup or 8 fl oz to mL')
+    print('9. 1 cup or 8 fl oz per mL')
     print('9a. mL to cups')
-    print('10. 1 pint or 2 cups or 16 fl oz to mL')
-    print('11. 1 quart or 2 pints to mL')
-    print('12. 1 gallon or 4 quarts or 128 fl oz to Liters')
+    print('10. 1 pint or 2 cups or 16 fl oz per mL')
+    print('10a. mL to pints')
+    print('11. 1 quart or 2 pints per mL')
+    print('11a. mL to quarts')
+    print('12. 1 gallon or 4 quarts or 128 fl oz per Liter')
+    print('12a. Liters to gallons')
 
 def km_miles():
     km = float(input('Enter distance in kilometers: '))
@@ -102,17 +105,35 @@ def pint_mL():
 
     print('pints in mL: {0}'.format(mL))
 
+def mL_pint():
+    mL = float(input('Enter the number of pints: '))
+    pint = mL / 473.17648
+
+    print('mL in pints: {0}'.format(pint))
+
 def quart_mL():
     quart = float(input('Enter the number of quarts: '))
     mL = quart * 946.35296
 
     print('quarts in mL: {0}'.format(mL))
 
+def mL_quart():
+    mL = float(input('Enter the number of mL: '))
+    quart = mL / 946.35296
+
+    print('mL in quarts: {0}'.format(quart))
+
 def gal_Liters():
     gal = float(input('Enter the number of gallons: '))
     Liters = gal * 3.7854
 
     print('gallons in Liters: {0}'.format(Liters))
+
+def Liters_gal():
+    Liters = float(input('Enter the number of Liters: '))
+    gal = Liters / 3.7854
+
+    print('Liters in gallons: {0}'.format(gal))
 
 if __name__ == '__main__':
     print_menu()
@@ -156,8 +177,17 @@ if __name__ == '__main__':
     if choice == '10':
         pint_mL()
 
+    if choice == '10a':
+        mL_pint()
+
     if choice == '11':
         quart_mL()
 
+    if choice == '11a':
+        mL_quart()
+
     if choice == '12':
         gal_Liters()
+
+    if choice == '12a':
+        Liters_gal()
