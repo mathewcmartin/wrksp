@@ -14,6 +14,8 @@ def print_menu():
     print('4. Pounds to Kilograms')
     print('5. Celsius to Farenheit')
     print('6. Farenheit to Celsius')
+    print('7. tbsp to mL')
+    print('8. 1 fl oz or 2 tbsp to mL')
 
 def km_miles():
     km = float(input('Enter distance in kilometers: '))
@@ -51,6 +53,18 @@ def farenheit_celsius():
 
     print('Temperature in Celsius: {0}'.format(celsius))
 
+def tbsp_mL():
+    tbsp = float(input('Enter the number of tbsp: '))
+    mL = tbsp * 14.78677
+
+    print('tbsp in mL: {0}'.format(mL))
+
+def floz_mL():
+    floz = float(input('Enter the number of fluid ounces: '))
+    mL = floz * 29.57353
+
+    print('fluid ounces in mL: {0}'.format(mL))
+
 if __name__ == '__main__':
     print_menu()
     choice = input('Which conversion would you like to do?: ')
@@ -71,3 +85,9 @@ if __name__ == '__main__':
 
     if choice == '6':
         farenheit_celsius()
+
+    if choice == '7':
+        tbsp_mL()
+
+    if choice == '8':
+        floz_mL()
