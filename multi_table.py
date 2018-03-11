@@ -12,7 +12,3 @@ if __name__ == '__main__':
     a = input('Enter a number: ')
     b = input('Enter the range or how many iterations you would like to see: ')
     multi_table(a)
-
-    answer = input('Do you want to exit? (y) for yes ')
-    if answer == 'y':
-        break
