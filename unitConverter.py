@@ -15,17 +15,17 @@ def print_menu():
     print('5. Celsius to Farenheit')
     print('6. Farenheit to Celsius')
     print('7. tbsp to mL')
-    print('7a. mL to tbsp')
-    print('8. 1 fl oz or 2 tbsp per mL')
-    print('8a. mL to fl oz')
-    print('9. 1 cup or 8 fl oz per mL')
-    print('9a. mL to cups')
-    print('10. 1 pint or 2 cups or 16 fl oz per mL')
-    print('10a. mL to pints')
-    print('11. 1 quart or 2 pints per mL')
-    print('11a. mL to quarts')
-    print('12. 1 gallon or 4 quarts or 128 fl oz per Liter')
-    print('12a. Liters to gallons')
+    print('8. mL to tbsp')
+    print('9. 1 fl oz or 2 tbsp per mL')
+    print('10. mL to fl oz')
+    print('11. 1 cup or 8 fl oz per mL')
+    print('12. mL to cups')
+    print('13. 1 pint or 2 cups or 16 fl oz per mL')
+    print('14. mL to pints')
+    print('15. 1 quart or 2 pints per mL')
+    print('16. mL to quarts')
+    print('17. 1 gallon or 4 quarts or 128 fl oz per Liter')
+    print('18. Liters to gallons')
 
 def km_miles():
     km = float(input('Enter distance in kilometers: '))
@@ -159,35 +159,35 @@ if __name__ == '__main__':
     if choice == '7':
         tbsp_mL()
 
-    if choice == '7a':
+    if choice == '8':
         mL_tbsp()
 
-    if choice == '8':
+    if choice == '9':
         floz_mL()
 
-    if choice == '8a':
+    if choice == '10':
         mL_floz()
 
-    if choice == '9':
+    if choice == '11':
         cup_mL()
 
-    if choice == '9a':
+    if choice == '12':
         mL_cup()
 
-    if choice == '10':
+    if choice == '13':
         pint_mL()
 
-    if choice == '10a':
+    if choice == '14':
         mL_pint()
 
-    if choice == '11':
+    if choice == '15':
         quart_mL()
 
-    if choice == '11a':
+    if choice == '16':
         mL_quart()
 
-    if choice == '12':
+    if choice == '17':
         gal_Liters()
 
-    if choice == '12a':
+    if choice == '18':
         Liters_gal()
