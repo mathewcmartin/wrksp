@@ -24,11 +24,12 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
-  count = 
-  if  >= 10:
-      return '"Number of donuts: " + count'
-  else:
-      return 'Number of donuts: many'
+    tenOrLess = "Number of donuts: " + str(int(count))
+    moreThenTen = 'Number of donuts: many'
+    if count >= 10:
+        print tenOrLess
+    else:
+        print moreThenTen
 
 
 
